@@ -35,10 +35,17 @@ export class AppComponent implements OnInit {
       'screen_name': 'Test Home 1'
     });
 
-    gtag("event", "begin_checkout", {
+    gtag("event", "purchase", {
+      // This purchase event uses a different transaction ID
+      // from the previous purchase event so Analytics
+      // doesn't deduplicate the events.
+      // Learn more: https://support.google.com/analytics/answer/12313109
+      transaction_id: "T_12345_2",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
       currency: "USD",
-      value: 7.77,
-      coupon: "SUMMER_FUN",
+      coupon: "SUMMER_SALE",
       items: [
         {
           item_id: "SKU_12345",
@@ -59,8 +66,7 @@ export class AppComponent implements OnInit {
           location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
           price: 9.99,
           quantity: 1
-        }
-      ]
+        }]
     });
   }
 
