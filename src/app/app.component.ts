@@ -12,8 +12,6 @@ export class AppComponent implements OnInit {
 
   constructor(
   ) {
-    // gtag('event', 'page_view', {page_path: 'https://angular-ga4.netlify.app/'})
-
     gtag('event', 'page_view', {
       'app_name': 'myAppName',
       'screen_name': 'Home'
