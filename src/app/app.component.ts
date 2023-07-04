@@ -18,6 +18,10 @@ export class AppComponent implements OnInit {
       'app_name': 'myAppName',
       'screen_name': 'Home'
     });
+    gtag('event', 'test_page_view', {
+      'app_name': 'myAppName',
+      'screen_name': 'Home'
+    });
   }
 
   ngOnInit() {
