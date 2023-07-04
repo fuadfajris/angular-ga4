@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ) {
     // gtag('event', 'page_view', {page_path: 'https://angular-ga4.netlify.app/'})
 
-    gtag('event', 'screen_view', {
+    gtag('event', 'page_view', {
       'app_name': 'myAppName',
       'screen_name': 'Home'
     });
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
 
   testga1() {
     console.log("test1")
-    gtag('event', 'screen_view', {
+    gtag('event', 'page_view', {
       'app_name': 'myAppName1',
       'screen_name': 'Test Home 1'
     });
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
 
   testga2() {
     console.log("test2")
-    gtag('event', 'screen_view', {
+    gtag('event', 'page_view', {
       'app_name': 'myAppName2',
       'screen_name': 'Test Home 2'
     });
