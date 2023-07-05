@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
   testga1() {
     console.log("test1")
-    gtag('event', 'page_view', {
+    gtag('event', 'test_click_view', {
       'app_name': 'myAppName1',
       'screen_name': 'Test Home 1'
     });

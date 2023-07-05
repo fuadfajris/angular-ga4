@@ -73,7 +73,7 @@
       }]
     });
 
-    let test = {
+    let ecommerce = {
       transaction_id: "T_12345",
       value: 25.42,
       tax: 4.90,
@@ -104,7 +104,7 @@
       ]
     }
 
-    gtag("event", "purchase", 'ecommerce', test);
+    gtag("event", "purchase", ecommerce);
 
     gtag("event", "view_health_declaration", {
       item_list_id: "related_products",
