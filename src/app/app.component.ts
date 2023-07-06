@@ -29,7 +29,10 @@ export class AppComponent implements OnInit {
     //   'screen_name': 'Test Home 1'
     // });
 
-    
+    gtag('event', 'click', {
+      category: 'Flexi Saving',
+      label: 'Flexi Saving Buy Banner'
+    })
   }
 
   testga2() {
