@@ -104,16 +104,16 @@
       ]
     }
     let ecommerce2 = {
-      transaction_id: "TE_2",
-      value: 2,
-      tax: 2,
-      shipping: 2,
+      transaction_id: "TE_4",
+      value: 4,
+      tax: 4,
+      shipping: 4,
       currency: "USD",
-      coupon: "ECOMMERCE_2",
+      coupon: "ECOMMERCE_4",
       items: [
         {
           item_id: "SKU_12345",
-          item_name: "Test purchase 2",
+          item_name: "Test purchase 4",
           affiliation: "Google Merchandise Store",
           coupon: "SUMMER_FUN",
           discount: 2.22,
@@ -167,7 +167,7 @@
     // gtag("event", "view_item_list", ecommerce3)
     gtag("event", "view_item", ecommerce3)
     // gtag("event", "purchase", ecommerce);
-    // gtag("event", "purchase", ecommerce2);
+    gtag("event", "purchase", ecommerce2);
     gtag("event", "purchase", ecommerce3);
 
     // gtag("event", "view_health_declaration", {
